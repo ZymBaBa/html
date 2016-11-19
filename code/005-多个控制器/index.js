@@ -1,0 +1,1 @@
+/** * Created by Mr.zhou on 2016/11/12. */var fistController=function ($scope) {    $scope.name='张三';};var secondController=function ($scope) {    $scope.name='李四';};

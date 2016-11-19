@@ -1,0 +1,1 @@
+angular.module('myApp',[])    .controller('cartController',['$http','$scope',function ($http, $scope) {        //引入json文件        var url='https://api.douban.com/v2/book/1220562';        $http.jsonp(url, {jsonpCallbackParam: 'callback'}).success(function (data) {                $scope.cart = data;            });    }]);

@@ -1,0 +1,1 @@
+angular.module('myApp')    .factory('inPut',function () {       return{           message:'Hello World'       }    })    .controller('firstController',function ($scope,inPut) {        $scope.data=inPut;        $scope.today=new Date;    });

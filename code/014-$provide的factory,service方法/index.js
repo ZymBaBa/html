@@ -1,0 +1,1 @@
+var myApp=angular.module('myApp',[],function ($provide) {    //自定义工厂    $provide.factory('server',function () {        return[1,2,3,4,5,6]    });    $provide.service('Custom',function () {        return[1,2,3,4,5,6]    })});myApp.controller('fistController',function ($scope,server,Custom) {    $scope.name='张三';   console.log(server);    console.log(Custom)});

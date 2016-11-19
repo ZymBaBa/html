@@ -1,0 +1,1 @@
+var myApp=angular.module('myApp',[]);myApp.controller('fistController',function ($scope) {    $scope.name='张三'});

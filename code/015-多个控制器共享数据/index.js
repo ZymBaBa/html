@@ -1,0 +1,1 @@
+angular.module('myApp',[])    .factory('Data',function () {        return{            message:'共享数据'        }})    .controller('firstController',function ($scope,Data) {    $scope.pro={        name:'张三'    };    $scope.data=Data;})    .controller('secondController',function ($scope,Data) {    $scope.pro=$scope.$$prevSibling.pro;    $scope.data=Data;});
